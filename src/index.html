@@ -6,9 +6,106 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <a class="logo">
+       <img src="imagenes/logo.png">
+       <h2>Baby Life Store</h2>
+      </a>
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Tienda</a>
+        <a href="#">Mi Carrito</a>
+      </nav> 
+    </header>
+    <h1>Completa tu pago</h1>
+    <main>
+      <div class="pantallaInicial" id="pantallaInicial">
+        <section class="card" id="card">
+          <div class="card-front">  
+            <div class="logo-marca" id="logo-marca">
+            </div>
+            <div class="card-data">
+              <div class="num-tar" id="num-tar">
+              <p class="label">Número Tarjeta</p>
+              <p class="card-number-data" id="card-number-data">0000 0000 0000 0000</p>
+            </div> 
+            <div class="flexbox">
+              <div class="name-tar" id="name-tar">
+                <p class="label">Nombre Tarjeta</p>
+                <p class="card-name-data" id="card-name-data">Andreyna Navas</p>
+              </div>
+              <div class="exp-tar" id="exp-tar">
+                <p class="label">Expiración</p>
+                <p class="card-date-data" id="card-date-data"><span class="month" id="month">MM</span>/<span class="year" id="year">AA</span></p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>   
+            
+        <section>
+          <form>
+            <h3>Ingresa tus datos:</h3>
+              <div class="form-data">
+                <label for="credit-card-name">Nombre de tarjeta</label>
+                <input type="text" placeholder="Andreyna Navas" id="credit-card-name" name="nombre-de-tarjeta" required>
+                <label for="credit-card-number">Número de tarjeta</label>
+                <input type="text" minlength="14" maxlength="16" placeholder="0000 0000 0000 0000" id="credit-card-number" name="numero-de-tarjeta" required pattern="[0-9]+">
+                <p class="error" id="error"></p>
+                <div class="flexbox">
+                  <div class="exp-group">
+                    <label for="exp-month">Fecha Expiración</label>
+                    <div class="flexbox">
+                      <div class="group-select">
+                        <select name="month" id="select-month">
+                          <option disable selected>Mes</option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                      </select>
+                    </div>
+                      <div class="group-select">
+                        <select name="year" id="select-year">
+                          <option disable selected>Año</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cvv-group">
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" placeholder="000" id="card-cvv" maxlength="3" name="cvv" required>
+                  </div>
+                </div>
+                <button class="btn" id="btn">Confirmar</button>
+              </div>
+          </form>  
+        </section>
+      </div> 
+        <div class="pantallaConfirm" id="pantallaConfirm">
+          <p class="mensaje">Hemos recibido los datos de tu tarjeta: </p>
+          <p id="ocultaNum"></p>
+          <img src="imagenes/espiral.png"  class="check" id="check">
+          
+          <p id="resultado"></p>
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

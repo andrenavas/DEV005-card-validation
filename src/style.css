@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF6F0;
+    font-family:'Lucida Sans', sans-serif;
+    margin: 0;
+
+}
+
+.pantallaInicial {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje {
+    font-weight: bold;
+}
+.pantallaConfirm,
+.pantallaConfirm .p {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px ;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    max-height: 250px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease all;
+    transform: rotateY(odeg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+.tarjeta.active{
+    transform: rotateY(180deg);
+}
+.card > div{
+    padding: 40px;
+    border-radius: 20px;
+    min-height: 200px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#d3d3d3;
+}
+
+.card-front {
+    width: 100%;
+    background: url(imagenes/TC.png);
+    background-size:cover;
+} 
+
+.card .logo-marca {
+    text-align: right;
+    min-height: 60px;
+    max-width: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .logo-marca img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 80px;
+}
+
+.card-data .label {
+    font-size: 14px;
+    color: #d3d3d3;;
+    margin-bottom: 5px;
+}
+
+.num-tar,
+.name-tar,
+.exp-tar {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.card .flexbox {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-data {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 150px 30px 30px 30px;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+    font-size: 15 px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    padding: 10px;
+}
+
+.form-data .label {
+    display: block;
+    color:gray;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.form-data input,
+.form-data select,
+.btn {
+    border: 2px gray;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.form-data input {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.form-data .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    background: #2e4d60;
+    box-shadow: #d3d3d3;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+h1 {
+    color: #2e4d60;
+    font-size: 25px;
+    font-family: Tahoma, Verdana, sans-serif;
+    padding: 10px;
+}
+
+h2 {
+    color: #FFF6F0;
+    font-size: 25 px;
+    font-family: Tahoma, Verdana, sans-serif;
+    padding: 10px;
+}
+h3 {
+    font-size: 15 px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e4d60;
+    height: 70 px;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 50px;
+    margin:10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+
+.check img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.invalid {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+
+.invalid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+nav a {
+    text-decoration: none;
+    color:#FFF6F0;
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    margin-top:20px;
+    background: url(imagenes/Ilustracion-BL-3A.png);
+    background-size: contain;
+    color: #2e4d60;
+    text-align: center;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+
+}

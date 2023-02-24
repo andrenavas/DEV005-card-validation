@@ -31,21 +31,11 @@ la suma de sus dígitos finales es un múltiplo de 10.
 
 ## 2. Resumen del proyecto
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+Este proyecto se trata de una pasarela de pago de una tienda online llama Baby Life Store, que vende productos para bebés y niños; le permite al usuario completar su compra, validando el número de su tarjeta de crédito. 
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
-
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre
-fundamentos de JavaScript, incluyendo conceptos como variables, condicionales,
-y funciones, así como eventos y manipulación básica del DOM, fundamentos de
-HTML y CSS. Mientras desarrollas este proyecto, te familiarizarás con nuevos
-conceptos también.
+Al ingresar los datos de nombre y tarjeta se van actualizando dinámicamente en la imagen de la tarjeta de crédito y a su vez muestra el logo de la tarjeta depende de su marca (Visa o Mastercard).
+Al darle click a confirmar, si el número de tarjeta es válido, se mostrará un mensaje: "Tu tarjeta es válida. ¡Gracias por tu compra!.", en caso que el número de tarjeta es inválido, mostrará el siguiente mensaje: "Tu tarjeta es inválida. Intenta con otra tarjeta.". Y también oculta los dígitos de la tarjeta, a excepción de los últimos 4.
+Adicional, si el campo está vacío le indica al usuario que debe completar el campo de número de tarjeta para continuar.
 
 ### Los objetivos generales de este proyecto son los siguientes
 
