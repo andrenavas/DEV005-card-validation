@@ -1,6 +1,6 @@
 const validator = {
   isValid: function (num) {
-    const reverseNum = num.split('').reverse().join(''); //split convierte string en array, reverse lo reversa y join convierte el array en string
+    const reverseNum = num.split('').reverse(); //split convierte string en array, reverse lo reversa.
     //console.log('Esta es la reversa del número ', reverseNum);
     let sumaTotal=0;
     let num1=0;
