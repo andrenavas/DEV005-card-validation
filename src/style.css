@@ -49,9 +49,6 @@ body {
     z-index: 2;
 }
 
-.tarjeta.active{
-    transform: rotateY(180deg);
-}
 .card > div{
     padding: 40px;
     border-radius: 20px;
@@ -212,18 +209,6 @@ header {
     object-fit: cover;
 }
 
-.invalid {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    margin: auto;
-}
-
-.invalid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 nav a {
     text-decoration: none;
     color:#FFF6F0;
