@@ -1,6 +1,7 @@
 import validator from './validator.js';
 //Definiendo las variables
 const btnValidar = document.getElementById('btn');
+const btnVolver = document.getElementById('btnVolver');
 const resultado = document.getElementById('resultado');
 const error = document.getElementById('error');
 const ocultaNum = document.getElementById('ocultaNum');
@@ -20,7 +21,7 @@ const pantallaConfirm = document.getElementById('pantallaConfirm');
 //Para el número de tarjeta y agregando logo de la marca
 numTarjeta.addEventListener('keyup', (event) =>{
   const valorInput = event.target.value;
-  numTarjeta.value = valorInput.replace(/\s/g,'');
+  numTarjeta.value = valorInput.replace(/\s/g,'').replace(/\D/g,'');
   dataTarjeta.textContent = valorInput;
 
   if(valorInput[0] === '4') {
@@ -75,3 +76,8 @@ function validar() {
 btnValidar.addEventListener('click', function(event) {
   event.preventDefault(); validar()
 })
+
+btnVolver.addEventListener('click', function(event) {
+  event.preventDefault(); pantallaInicial.style.display = 'block'; pantallaConfirm.style.display = 'none';
+})
+
